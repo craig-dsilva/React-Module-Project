@@ -5,7 +5,7 @@ import SearchResults from "@/components/SearchResults/SearchResults.jsx";
 // import FakeBookings from "@/data/fakeBookings.json";
 
 const Bookings = () => {
-  const [bookings, setBookings] = useState();
+  const [bookings, setBookings] = useState([]);
 
   // const search = (searchVal) => {
   //   console.info("TO DO!", searchVal);
