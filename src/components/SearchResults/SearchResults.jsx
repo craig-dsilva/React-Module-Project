@@ -29,7 +29,7 @@ const SearchResults = ({ results }) => {
             checkOutDate,
           }) => {
             return (
-              <tr>
+              <tr key={id}>
                 <td>{title}</td>
                 <td>{firstName}</td>
                 <td>{surname}</td>
