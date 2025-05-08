@@ -14,7 +14,7 @@ const Bookings = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/bookings`);
+        const res = await fetch(`http://52.208.38.55/bookings`);
         const data = await res.json();
         setBookings(data);
       } catch (error) {
