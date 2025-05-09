@@ -4,8 +4,22 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.4
+      - name: Install dependencies
+        run: npm i
+      - name: Run tests
+        run: npm t
+
   deploy:
     runs-on: ubuntu-latest
     steps:
