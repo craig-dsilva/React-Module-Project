@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 20.4
       - name: Install dependencies
-        run: npm i
+        run: npm ci
       - name: Run tests
         run: npm t
 
